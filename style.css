@@ -1,0 +1,612 @@
+ /*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+body {
+    margin: 0;
+    background-color: rgb(146, 158, 179);
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 17px;
+    text-decoration: none;
+    border-radius: 7px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+.float:hover {
+    background-color: #4f4e79;
+}
+
+.links {
+    position: fixed;
+    bottom: 2px;
+    left: 2px;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+.bodyimg {
+    width: 100%;
+    background-image: url(img/brand.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+header .hovercon {
+
+    
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+header .hovercon a {
+    position: fixed;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(243, 14, 14);
+    padding: 10px;
+    font-size: 10px;
+    font-family: cursive;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 7px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+header .hovercon a:hover {
+    background-color: #000;
+}
+header .modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+ header .modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+header .modalcontent {
+    position: relative;
+    background: #ffffff;
+    width: 80%;
+    padding: 20px;
+    list-style: none;
+}
+
+header .modalcontent li {
+    padding: 10px 0 40px;
+}
+
+header .modalcontent li a:hover {
+    background-color: rgb(7, 32, 46);
+}
+
+
+.home h1 {
+    font-size: 58px;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px 8px rgb(255, 255, 255);
+    padding-bottom: 120px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .home h1 {
+        font-size: 70px;
+}
+
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    text-shadow: 2px 2px 8px rgb(0, 0, 0);
+}    
+
+.wrapper h1 {
+    font-family: cursive;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .wrapper h1 {
+        font-size: 70px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
+
+.wrapper p {
+    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .wrapper p{
+        font-size: 40px;
+        font-style: italic;
+        line-height: 50px;
+        text-align: center;
+    }
+}
+.servicebody {
+ width: 100%;
+ position: relative;
+ margin: 0 auto;
+}
+
+.servicebody::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.wraplist {
+    width: 370px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 4px white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .wraplist {
+        width: 700px;
+        font-size: 40px;
+        text-shadow: 2px 2px 8px black;
+    }
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 8px rgb(255, 255, 255);
+    padding-top: 20px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+@media only screen and (min-width: 1000px) {
+    .servicebody {
+        background-image: url(img/brand.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+    }
+
+    .services img {
+        visibility: hidden;
+        opacity: 0;
+        height: 20px;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .servicebody h1{
+        padding-right: 20px;
+        font-size: 70px;
+        font-family: 'Courier New', Courier, monospace;
+        text-transform: uppercase;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .servicebody p {
+        font-size: 40px;
+        float: right;
+        text-shadow: 2px 2px 8px black;
+    }
+}
+.aircon {
+    width: 100%;
+    height: 750px;
+    background-image: url(img/aircon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (min-width: 1000px) {
+    .aircon {
+        background-image: none;
+        height: 100px;
+    }
+}
+.aircon h1 {
+    font-size: 55px;
+    text-align: center;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 8px rgb(255, 255, 255);
+}
+
+.aircon p{
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 8px rgb(0, 0, 0);
+    padding-top: 20px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .aircon p {
+        font-size: 50px;
+    }
+}
+
+.airconmes {
+    width: 100%;
+    height: 640px;
+    background-image: url(img/airconn.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (min-width: 1000px) {
+    .airconmes {
+        background-image: none;
+        height: 100px;
+    }
+}
+.airconmes p {
+    font-size: 55px;
+    text-align: center;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    padding-top: 20px;
+}
+
+.washing {
+    width: 100%;
+    height: 400px;
+    background-image: url(img/washing.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (min-width: 1000px) {
+    .washing {
+        background-image: none;
+        height: 100px;
+    }
+}
+
+.washing h1 {
+    font-size: 55px;
+    text-align: center;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 8px rgb(255, 255, 255);
+}
+
+.washing p {
+    font-size: 37px;
+    text-align: center;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    padding-top: 20px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .washing p {
+        padding-top: 40px;
+    }
+}
+
+.water {
+    width: 100%;
+    height: 400px;
+    background-image: url(img/water.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+@media only screen and (min-width: 1000px) {
+    .water {
+       background-image: none;
+       height: 100px;
+    }
+}
+
+.water h1 {
+    font-size: 55px;
+    text-align: center;
+    font-style: italic;
+    font-family: cursive;
+    padding-top: 0 !important;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 8px rgb(255, 255, 255);
+}
+
+.water p {
+    font-size: 35px;
+    text-align: center;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
+
+@media only screen and (min-width: 1000px) {
+    .water p {
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+}
+
+.cold {
+    width: 100%;
+    height: 400px;
+    background-image: url(img/coldroom.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+@media only screen and (min-width: 1000px) {
+    .cold {
+        background-image: none;
+        height: 200px;
+    }
+}
+
+.cold h1 {
+    font-size: 55px;
+    text-align: center;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: bold;
+    padding-top: 10px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 8px rgb(255, 255, 255);
+}
+
+@media only screen and (min-width: 1000px) {
+    .cold h1 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+.cold p {
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    padding-top: 20px;
+}
+
+.infor h1 {
+    font-size: 55px;
+    text-align: center;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: bold;
+    padding-top: 120px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 8px rgb(255, 255, 255);
+}
+
+.infor h2 {
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: bold;
+    padding-top: 20px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 8px rgb(255, 255, 255);
+}
+
+.infor h3 {
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: bold;
+    padding-top: 20px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 8px rgb(255, 255, 255);
+}
+
+.about {
+    background-color: rgb(40, 104, 104);
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    padding-top: 20px;
+}
+ .about h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+ }
+
+ @media only screen and (min-width: 1000px) {
+    .about {
+        background-image: url(img/brand.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+ }
